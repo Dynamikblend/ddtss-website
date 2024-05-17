@@ -38,7 +38,7 @@ rel="stylesheet">
         }
         .hero {
             background: 
-url('data:image/webp;base64,UklGRjIAAABXRUJQVlA4WAoAAAAQAAAAkwAAQUxQSCwAAAABQWRvYmUAAE1FADwAAP+74AQAAPfv+2wAAAAA') 
+url('data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAkwAAQUxQSCwAAAABQWRvYmUAAE1FADwAAP+74AQAAPfv+2wAAAAA') 
 no-repeat center center/cover;
             height: 400px;
             display: flex;
@@ -100,7 +100,7 @@ no-repeat center center/cover;
 <body>
     <header>
         <img 
-src="data:image/webp;base64,UklGRpoAAABXRUJQVlA4TAoAAAAQAAAAkwAAQUxQSCwAAAABQWRvYmUAAHjjNAAA/v7/LwAACxcVQAAAAA==" 
+src="data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAAQAAAAkwAAQUxQSCwAAAABQWRvYmUAAE1FADwAAP+74AQAAPfv+2wAAAAA" 
 alt="DDTSS Logo">
         <nav>
             <a href="#mission">Mission</a>
@@ -117,7 +117,7 @@ alt="DDTSS Logo">
         <section id="mission" class="mission-statement">
             <h2>Our Mission</h2>
             <img 
-src="data:image/webp;base64,UklGRjIAAABXRUJQVlA4WAoAAAAQAAAAkwAAQUxQSCwAAAABQWRvYmUAAE1FADwAAP+74AQAAPfv+2wAAAAA" 
+src="data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAkwAAQUxQSCwAAAABQWRvYmUAAE1FADwAAP+74AQAAPfv+2wAAAAA" 
 alt="Our Mission">
             <p>
                 At Defense Division Tactical Security 
@@ -151,7 +151,7 @@ alt="Standard Security Protocols">
                 <h3>PHASE 2: Intermediate Security 
 Protocols</h3>
                 <img 
-src="data:image/webp;base64,UklGRjAAAABXRUJQVlA4WAoAAAAQAAAAkwAAQUxQSCwAAAABQWRvYmUAAE1FADwAAP+74AQAAPfv+2wAAAAA" 
+src="data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAkwAAQUxQSCwAAAABQWRvYmUAAE1FADwAAP+74AQAAPfv+2wAAAAA" 
 alt="Intermediate Security Protocols">
                 <ul>
                     <li>Security Officers for 
@@ -173,7 +173,7 @@ Casinos</li>
                 <h3>PHASE 3: Expert Security 
 Protocols</h3>
                 <img 
-src="data:image/webp;base64,UklGRjAAAABXRUJQVlA4WAoAAAAQAAAAkwAAQUxQSCwAAAABQWRvYmUAAE1FADwAAP+74AQAAPfv+2wAAAAA" 
+src="data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAkwAAQUxQSCwAAAABQWRvYmUAAE1FADwAAP+74AQAAPfv+2wAAAAA" 
 alt="Expert Security Protocols">
                 <ul>
                     <li>Quick Response Team</li>
@@ -226,5 +226,30 @@ required>
                 
                 <label for="email">Email</label>
                 <input type="email" id="email" 
-name="email"
+name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" 
+rows="5" required></textarea>
+                
+                <button type="submit">Send 
+Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Defense Division Tactical Security 
+Solutions. All rights reserved.</p>
+    </footer>
+    <script>
+        
+document.querySelector('.contact-form').addEventListener('submit', 
+function(event) {
+            event.preventDefault();
+            alert('Thank you for contacting us! We will 
+get back to you soon.');
+        });
+    </script>
+</body>
+</html>
 
